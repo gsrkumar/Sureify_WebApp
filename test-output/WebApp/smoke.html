@@ -1,0 +1,1150 @@
+<html>
+<head>
+<title>TestNG:  smoke</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>smoke</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>58/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 03 16:14:13 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>792 seconds (792759 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>smoketest </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sureifylife.WebApp.BasicInfo()'><b>BasicInfo</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-550302731" onClick='toggleBox("Output-550302731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-550302731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-550302731">
+TEST NO : 22<br/>
+	TITLE : Entering Into Basicinfo Quote Page<br/>
+	STATUS : Enterend into Basicinfo Quote Page<br/>
+	TEST : Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.InvalidWeight()'><b>InvalidWeight</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-557023099" onClick='toggleBox("Output-557023099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-557023099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-557023099">
+TEST NO : 84<br/>
+	Title : Test weight field with Invalid data<br/>
+	Input : wight<br/>
+	Status :Passed<br/>
+	Input : ';,,<br/>
+	Status :Passed<br/>
+	Input : wi123<br/>
+	Status :Passed<br/>
+	Input :    <br/>
+	Status :Passed<br/>
+	Input : 1<br/>
+	Status :Passed<br/>
+	Input : 0<br/>
+	Status :Passed<br/>
+	Input : 00<br/>
+	Status :Failed<br/>
+	Input : 000<br/>
+	Status :Failed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.buyNow()'><b>buyNow</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-778731861" onClick='toggleBox("Output-778731861", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-778731861" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-778731861">
+TEST NO : 58<br/>
+	Title: Click on Apply Button <br/>
+	Input: N/A <br/>
+	Status::Passed  Clicked on Confirm Button<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.captcha()'><b>captcha</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-138776324" onClick='toggleBox("Output-138776324", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-138776324" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-138776324">
+TEST NO : 72<br/>
+	Title click capcha<br/>
+	Status :: Complete capcha<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.choosGender()'><b>choosGender</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1341706533" onClick='toggleBox("Output-1341706533", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1341706533" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1341706533">
+TEST NO : 82<br/>
+	Title choose gender<br/>
+	Input : female<br/>
+	Status ::Failed<br/>
+	Input : male<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.chooseBirth()'><b>chooseBirth</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-951031848" onClick='toggleBox("Output-951031848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-951031848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-951031848">
+TEST NO : 81<br/>
+	Title: Select Month,Day and Year of Birth <br/>
+	Input : January/1/1901<br/>
+	Status ::Passed to select month<br/>
+	Status ::Passed to select day<br/>
+	Status ::Passed to select year<br/>
+	Input : February/2/1902<br/>
+	Status ::Passed to select month<br/>
+	Status ::Passed to select day<br/>
+	Status ::Passed to select year<br/>
+	Input : November/29/2015<br/>
+	Status ::Passed to select month<br/>
+	Status ::Passed to select day<br/>
+	Status ::Passed to select year<br/>
+	Input : December/30/2016<br/>
+	Status ::Passed to select month<br/>
+	Status ::Passed to select day<br/>
+	Status ::Passed to select year<br/>
+	Input : July/5/1990<br/>
+	Status ::Passed to select month<br/>
+	Status ::Passed to select day<br/>
+	Status ::Passed to select year<br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.clickCreat()'><b>clickCreat</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1497377679" onClick='toggleBox("Output-1497377679", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1497377679" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1497377679">
+TEST NO : 73<br/>
+	Title click to CREATE button<br/>
+	Status ::Passed clicked to create button<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.clickLink()'><b>clickLink</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-445918232" onClick='toggleBox("Output-445918232", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-445918232" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-445918232">
+TEST NO : 63<br/>
+	Title Click link redirect to AppProcessCreateAcount Page<br/>
+	Status::Passed Controller redirect to Appprocess<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.clickNextInPersonalINfo()'><b>clickNextInPersonalINfo</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-140404585" onClick='toggleBox("Output-140404585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-140404585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-140404585">
+TEST NO : 110<br/>
+	Title : Click Next Button In PersonalInfo page<br/>
+	Status ::Passed clicked Next button<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.confirmApply()'><b>confirmApply</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1583353301" onClick='toggleBox("Output-1583353301", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1583353301" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1583353301">
+TEST NO : 50<br/>
+	Title: Click on Confirm&Apply Button <br/>
+	Input: N/A <br/>
+	Status: Passed :: Clicked on Confirm&Apply Button<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.createAccountInstance()'><b>createAccountInstance</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1898325501" onClick='toggleBox("Output-1898325501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1898325501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1898325501">
+TEST NO : 64<br/>
+	Create instance for Create Account<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.driverState()'><b>driverState</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-990679445" onClick='toggleBox("Output-990679445", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-990679445" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-990679445">
+TEST NO : 106<br/>
+	Title Select Driver State<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.enterAddress2()'><b>enterAddress2</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1916904573" onClick='toggleBox("Output-1916904573", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1916904573" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1916904573">
+TEST NO : 92<br/>
+	Title : Enter Address2<br/>
+	Input : 6th lane<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getCaptcha()'><b>getCaptcha</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1678046232" onClick='toggleBox("Output-1678046232", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1678046232" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1678046232">
+TEST NO : 42<br/>
+	Title: Click Captcha <br/>
+	Status: Complete Captcha<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getQuotebutton2()'><b>getQuotebutton2</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-454305524" onClick='toggleBox("Output-454305524", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-454305524" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-454305524">
+TEST NO : 21<br/>
+	Title: Click on Get Quote Button <br/>
+	Input: N/A<br/>
+	Status: Clicked on Get Quote Button<br/>
+	Test - PASSED<br/>
+	Title: Redirect to Basic Info Page <br/>
+	Input: N/A<br/>
+	Status: Redirected to  Basic Info Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getquoteButton()'><b>getquoteButton</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1514476350" onClick='toggleBox("Output-1514476350", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1514476350" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1514476350">
+TEST NO : 43<br/>
+	Title: Click on Get Quote Button <br/>
+	Input: N/A <br/>
+	Title: Check the user is existed or new <br/>
+	Status:  Clicked on Get Quote Button<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.inavalidAddress1()'><b>inavalidAddress1</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-323823279" onClick='toggleBox("Output-323823279", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-323823279" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-323823279">
+TEST NO : 90<br/>
+	Title : Enter invalid data for Address1<br/>
+	Input :     <br/>
+	Status ::Passsed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.inavalidCity()'><b>inavalidCity</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-857394605" onClick='toggleBox("Output-857394605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-857394605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-857394605">
+TEST NO : 93<br/>
+	Title : Invalied City<br/>
+	Status : Input :     <br/>
+	Status ::Passsed<br/>
+	Status : Input :12345<br/>
+	Status ::Passsed<br/>
+	Status : Input :;'..][]<br/>
+	Status ::Passsed<br/>
+	Status : Input :1234,.<br/>
+	Status ::Passsed<br/>
+	Status : Input :weed123<br/>
+	Status ::Passsed<br/>
+	Status : Input :weed<>';<br/>
+	Status ::Passsed<br/>
+	Status : Input :qwertyuioplkjhgfdsazxcvbnmmnbvcxzlkjhgfdsapoiuytres<br/>
+	Status ::Passsed<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidCellNumber()'><b>invalidCellNumber</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1053967012" onClick='toggleBox("Output-1053967012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1053967012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1053967012">
+TEST NO : 98<br/>
+	Status : Enter invalid Cell Number<br/>
+	Input :    <br/>
+	Status ::Passed<br/>
+	Input :ads<br/>
+	Status ::Passed<br/>
+	Input :';.<br/>
+	Status ::Passed<br/>
+	Input : 5234<br/>
+	Status ::Passed<br/>
+	Input :524  <br/>
+	Status ::Passed<br/>
+	Input :524 12  <br/>
+	Status ::Passed<br/>
+	Input :123456789<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidFirstName()'><b>invalidFirstName</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-724608044" onClick='toggleBox("Output-724608044", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-724608044" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-724608044">
+TEST NO : 75<br/>
+	Title : Test FirstName field with invalid data<br/>
+	Input :   <br/>
+	Status ::Passed<br/>
+	Input : name<br/>
+	Status ::Passed<br/>
+	Input :a<br/>
+	Status ::Passed<br/>
+	Input :_name<br/>
+	Status ::Passed<br/>
+	Input :name12<br/>
+	Status ::Passed<br/>
+	Input :name?;'<br/>
+	Status ::Passed<br/>
+	Input :12345<br/>
+	Status ::Passed<br/>
+	Input :';';,[] <br/>
+	Status ::Passed<br/>
+	Input :name_<br/>
+	Status ::Failed<br/>
+	Input :qwertyuioplkjhgfdsazxcvbnmmnbvcxzlkjhgfdsapoiuytres<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidHomeNumber()'><b>invalidHomeNumber</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-671596011" onClick='toggleBox("Output-671596011", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-671596011" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-671596011">
+TEST NO : 102<br/>
+	Title : Enter invalid home number<br/>
+	Input :    <br/>
+	Status ::Passed<br/>
+	Input :ads<br/>
+	Status ::Passed<br/>
+	Input :';.<br/>
+	Status ::Passed<br/>
+	Input : 5234<br/>
+	Status ::Passed<br/>
+	Input :524  <br/>
+	Status ::Passed<br/>
+	Input :524 12  <br/>
+	Status ::Passed<br/>
+	Input :123456789<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidLastName()'><b>invalidLastName</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1954985045" onClick='toggleBox("Output-1954985045", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1954985045" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1954985045">
+TEST NO : 79<br/>
+	Title : Test LastName field with invalid data<br/>
+	Input :   <br/>
+	Status ::Passed<br/>
+	Input : name<br/>
+	Status ::Passed<br/>
+	Input :a<br/>
+	Status ::Passed<br/>
+	Input :_name<br/>
+	Status ::Passed<br/>
+	Input :name12<br/>
+	Status ::Passed<br/>
+	Input :name?;'<br/>
+	Status ::Passed<br/>
+	Input :12345<br/>
+	Status ::Passed<br/>
+	Input :';';,[] <br/>
+	Status ::Passed<br/>
+	Input :name_<br/>
+	Status ::Failed<br/>
+	Input :qwertyuioplkjhgfdsazxcvbnmmnbvcxzlkjhgfdsapoiuytres<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidLicenseNumber()'><b>invalidLicenseNumber</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1863655430" onClick='toggleBox("Output-1863655430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1863655430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1863655430">
+TEST NO : 104<br/>
+	Title Enter invalid License number<br/>
+	Input :      <br/>
+	Status ::Passed<br/>
+	Input : &&&&@##<br/>
+	Status ::Passed<br/>
+	Input : $$$14253<br/>
+	Status ::Passed<br/>
+	Input : @@@Abfc<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidMiddleName()'><b>invalidMiddleName</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-231202600" onClick='toggleBox("Output-231202600", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-231202600" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-231202600">
+TEST NO : 77<br/>
+	Title : Test MiddleName field with invalid data<br/>
+	Input :   <br/>
+	Status ::Passed<br/>
+	Input : name<br/>
+	Status ::Passed<br/>
+	Input :a<br/>
+	Status ::Passed<br/>
+	Input :_name<br/>
+	Status ::Passed<br/>
+	Input :name12<br/>
+	Status ::Passed<br/>
+	Input :name?;'<br/>
+	Status ::Passed<br/>
+	Input :12345<br/>
+	Status ::Passed<br/>
+	Input :';';,[] <br/>
+	Status ::Passed<br/>
+	Input :name_<br/>
+	Status ::Passed<br/>
+	Input :qwertyuioplkjhgfdsazxcvbnmmnbvcxzlkjhgfdsapoiuytres<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidOccupation()'><b>invalidOccupation</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-204322447" onClick='toggleBox("Output-204322447", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-204322447" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-204322447">
+TEST NO : 107<br/>
+	Title : Enter invalid Occupation data<br/>
+	Input :     <br/>
+	Status ::Passed<br/>
+	Input :12345<br/>
+	Status ::Passed<br/>
+	Input :;'..][]<br/>
+	Status ::Passed<br/>
+	Input :1234,.<br/>
+	Status ::Passed<br/>
+	Input :Qa123<br/>
+	Status ::Passed<br/>
+	Input :QA<>';<br/>
+	Status ::Passed<br/>
+	Input :qwertyuioplkjhgfdsazx<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidSSN()'><b>invalidSSN</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1262548561" onClick='toggleBox("Output-1262548561", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1262548561" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1262548561">
+TEST NO : 86<br/>
+	Title :Test SSN field with invalid data<br/>
+	Input :     <br/>
+	Status ::Passsed<br/>
+	Input : ads<br/>
+	Status ::Passsed<br/>
+	Input : ';.<br/>
+	Status ::Passsed<br/>
+	Input :  5234<br/>
+	Status ::Passsed<br/>
+	Input : 524  <br/>
+	Status ::Passsed<br/>
+	Input : 524 12  <br/>
+	Status ::Passsed<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidWorkNumber()'><b>invalidWorkNumber</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-69673470" onClick='toggleBox("Output-69673470", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-69673470" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-69673470">
+TEST NO : 100<br/>
+	Title : Enter invalid work number<br/>
+	Input :    <br/>
+	Status ::Passed<br/>
+	Input :ads<br/>
+	Status ::Passed<br/>
+	Input :';.<br/>
+	Status ::Passed<br/>
+	Input : 5234<br/>
+	Status ::Passed<br/>
+	Input :524  <br/>
+	Status ::Passed<br/>
+	Input :524 12  <br/>
+	Status ::Passed<br/>
+	Input :123456789<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidWorkZip()'><b>invalidWorkZip</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-788905599" onClick='toggleBox("Output-788905599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-788905599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-788905599">
+TEST NO : 109<br/>
+	Title : Enter invalid Work Zipcode data<br/>
+	Input :   <br/>
+	Status ::Passed<br/>
+	Input :1234<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.invalidZipCode()'><b>invalidZipCode</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-2048537720" onClick='toggleBox("Output-2048537720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2048537720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2048537720">
+TEST NO : 96<br/>
+	Title : Enter invalid Zipcode<br/>
+	Input :     <br/>
+	Status Info : Criteria not valid<br/>
+	Input : 123<br/>
+	Status Info : Criteria not valid<br/>
+	Input : 1234567890<br/>
+	Status Info : Criteria not valid<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.lanchApp()'><b>lanchApp</b><br>Test class: com.sureifylife.WebApp</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.lanchGmail()'><b>lanchGmail</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1707582034" onClick='toggleBox("Output-1707582034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1707582034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1707582034">
+TEST NO : 61<br/>
+	Title Lanch Gamil<br/>
+	Status::Passed lanch Mail<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.mailLogin()'><b>mailLogin</b><br>Test class: com.sureifylife.WebApp<br>Parameters: suresh@sureify.com, suresh@sureify<br/>
+<a href="#Output-2032079962" onClick='toggleBox("Output-2032079962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2032079962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2032079962">
+TEST NO : 62<br/>
+	Title Login into Gmail<br/>
+	Status::Passed valid User Name :suresh@sureify.com<br/>
+	Status::Passed valid Password :suresh@sureify<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.notInUs()'><b>notInUs</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-861623840" onClick='toggleBox("Output-861623840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-861623840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-861623840">
+TEST NO : 88<br/>
+	Title: Not in US Checkbox : Country list Should Display<br/>
+	Status ::Passed Checked Not in US <br/>
+	Status ::Passed Enable Country <br/>
+	Title :: Select Country<br/>
+	Input :India<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.personalInfo()'><b>personalInfo</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-402405659" onClick='toggleBox("Output-402405659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-402405659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-402405659">
+TEST NO : 74<br/>
+	Create instance for personalinfo <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.selectHeight()'><b>selectHeight</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-532048323" onClick='toggleBox("Output-532048323", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-532048323" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-532048323">
+TEST NO : 83<br/>
+	Title Select height<br/>
+	Input : 4' 10"<br/>
+	Status ::Passed<br/>
+	Input : 4' 11"<br/>
+	Status ::Passed<br/>
+	Input : 6' 4"<br/>
+	Status ::Passed<br/>
+	Input : 6' 3"<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.selectState()'><b>selectState</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-5395829" onClick='toggleBox("Output-5395829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5395829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5395829">
+TEST NO : 89<br/>
+	Title select state<br/>
+	Input :California<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.selectUserState()'><b>selectUserState</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1937380187" onClick='toggleBox("Output-1937380187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1937380187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1937380187">
+TEST NO : 95<br/>
+	Title : Select user state<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.setUp()'><b>setUp</b><br>Test class: com.sureifylife.WebApp<br>Parameters: chrome, staging<br/>
+<a href="#Output-702061917" onClick='toggleBox("Output-702061917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-702061917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-702061917">
+CHROME Browser Lanched<br/>
+Status: http://sureifylife.com/ Launched<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validAddress1()'><b>validAddress1</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-739333799" onClick='toggleBox("Output-739333799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-739333799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-739333799">
+TEST NO : 91<br/>
+	Title : Enter valid data for Address1<br/>
+	Input : forest hills<br/>
+	Status ::Passsed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validCellNumber()'><b>validCellNumber</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1976401987" onClick='toggleBox("Output-1976401987", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1976401987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1976401987">
+TEST NO : 98<br/>
+	Status : Enter invalid Cell Number<br/>
+	Input :9955123456<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validCity()'><b>validCity</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-713656449" onClick='toggleBox("Output-713656449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-713656449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-713656449">
+TEST NO : 94<br/>
+	Title : Valid City<br/>
+	Status : Input :weed city<br/>
+	Status ::Passsed<br/>
+	Status : Input :weed<br/>
+	Status ::Passsed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validConfirmPassword()'><b>validConfirmPassword</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-225672073" onClick='toggleBox("Output-225672073", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-225672073" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-225672073">
+TEST NO : 70<br/>
+	Title: Enter Valid data for Confirm Password<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validEmail()'><b>validEmail</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-501705927" onClick='toggleBox("Output-501705927", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-501705927" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-501705927">
+TEST NO : 41<br/>
+	Input:s@s.c<br/>
+	Status: Test PASSED - Email Accepted<br/>
+	Input:s@s.c.in<br/>
+	Status: Test PASSED - Email Accepted<br/>
+	Input:suresh@sureify.com<br/>
+	Status: Test PASSED - Email Accepted<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validFirstName()'><b>validFirstName</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-865059288" onClick='toggleBox("Output-865059288", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-865059288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-865059288">
+TEST NO : 75<br/>
+	Title : Test FirstName field with valid data<br/>
+	Input :name-test<br/>
+	Status ::Passed<br/>
+	Input :name'test<br/>
+	Status ::Passed<br/>
+	Input :name.test<br/>
+	Status ::Passed<br/>
+	Input :suresh<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validHomeNumber()'><b>validHomeNumber</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1909398279" onClick='toggleBox("Output-1909398279", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1909398279" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1909398279">
+TEST NO : 103<br/>
+	Title : Enter valid home number<br/>
+	Input :9955123456<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validLastName()'><b>validLastName</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1173346575" onClick='toggleBox("Output-1173346575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1173346575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1173346575">
+TEST NO : 80<br/>
+	Title : Test LastName field with valid data<br/>
+	Input :name-test<br/>
+	Status ::Passed<br/>
+	Input :name'test<br/>
+	Status ::Passed<br/>
+	Input :name.test<br/>
+	Status ::Passed<br/>
+	Input :gollapalli<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validLicenseNumber()'><b>validLicenseNumber</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-923083575" onClick='toggleBox("Output-923083575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-923083575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-923083575">
+TEST NO : 105<br/>
+	Title Enter invalid License number<br/>
+	Input : 123456789<br/>
+	Status ::Failed<br/>
+	Input : ABCFGK<br/>
+	Status ::Failed<br/>
+	Input : 1456ABFGH<br/>
+	Status ::Failed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validMiddleName()'><b>validMiddleName</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-220454978" onClick='toggleBox("Output-220454978", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-220454978" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-220454978">
+TEST NO : 78<br/>
+	Title : Test MiddleName field with valid data<br/>
+	Input :name-test<br/>
+	Status ::Passed<br/>
+	Input :name'test<br/>
+	Status ::Passed<br/>
+	Input :name.test<br/>
+	Status ::Passed<br/>
+	Input :kumar<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validName()'><b>validName</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-2077528955" onClick='toggleBox("Output-2077528955", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2077528955" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2077528955">
+TEST NO : 39<br/>
+	Title: Input Valid Name <br/>
+	Input:a<br/>
+	Status: Test PASSED - Name accepted<br/>
+	Input:suresh test<br/>
+	Status: Test PASSED - Name accepted<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validOccupation()'><b>validOccupation</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-600958416" onClick='toggleBox("Output-600958416", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-600958416" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-600958416">
+TEST NO : 108<br/>
+	Title : Enter valid Occupation data<br/>
+	Input :QAEngineer<br/>
+	Status ::Passed<br/>
+	Input :QA Engineer<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validPassword()'><b>validPassword</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-2075809815" onClick='toggleBox("Output-2075809815", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2075809815" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2075809815">
+TEST NO : 68<br/>
+	Title: Enter Valid data for Password<br/>
+	Input : Vendus@123<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validSSN()'><b>validSSN</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1705072168" onClick='toggleBox("Output-1705072168", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1705072168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1705072168">
+TEST NO : 87<br/>
+	Title :Test SSN field with valid data<br/>
+	Input : 541236987<br/>
+	Status ::Passsed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validWeight()'><b>validWeight</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1277108979" onClick='toggleBox("Output-1277108979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1277108979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1277108979">
+TEST NO : 85<br/>
+	Title : Test weight field with valid data<br/>
+	Input : 10<br/>
+	Status :Passed<br/>
+	Input : 11<br/>
+	Status :Passed<br/>
+	Input : 899<br/>
+	Status :Passed<br/>
+	Input : 900<br/>
+	Status :Passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validWorkNumber()'><b>validWorkNumber</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1509309988" onClick='toggleBox("Output-1509309988", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1509309988" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1509309988">
+TEST NO : 101<br/>
+	Title : Enter valid work number<br/>
+	Input :9955123456<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validWorkZip()'><b>validWorkZip</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1431556341" onClick='toggleBox("Output-1431556341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1431556341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1431556341">
+TEST NO : 110<br/>
+	Title : Enter valid Work Zipcode data<br/>
+	Input :96094<br/>
+	Status ::Passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validZipCode()'><b>validZipCode</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1877062907" onClick='toggleBox("Output-1877062907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1877062907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1877062907">
+TEST NO : 97<br/>
+	Title : Enter valid Zipcode<br/>
+	Input : 96094<br/>
+	Status ::Failed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.validzipcode()'><b>validzipcode</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-900636745" onClick='toggleBox("Output-900636745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-900636745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-900636745">
+TEST NO : 25<br/>
+	Title: Input Valid Zipcode <br/>
+	Input:12345<br/>
+	Test PASSED - Zipcode accepted<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.verifyShowAndHidePassword()'><b>verifyShowAndHidePassword</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-271800170" onClick='toggleBox("Output-271800170", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-271800170" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-271800170">
+TEST NO : 71<br/>
+	Title : Click Show and Hide Password link<br/>
+	Input : Click Show Password<br/>
+	Status ::Failed Show Passedword link not displayed<br/>
+	Input : Click Hide Password <br/>
+	Status ::Failed ,Exception rised<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@7c16905e</td></tr>
+</table><p>
+</body>
+</html>

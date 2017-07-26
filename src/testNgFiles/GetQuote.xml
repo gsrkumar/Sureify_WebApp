@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebApp">
+  <test name="GetQuote" >
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="environment" value="staging"></parameter>
+    <classes>
+      <class name="com.sureifylife.WebApp">
+        <methods>
+           <include name="setUp"></include>
+           
+           <include name="lanchApp"></include>         
+           <include name="getQuotebutton2"></include>  
+           <include name="BasicInfo"></include>     
+          
+           <!--  <include name="zipcodeInfo"></include> 
+           <include name="invalidzipcode"></include> -->
+           <include name="validzipcode"></include>  
+          
+           <!-- <include name="faceAmountInfo"></include> 
+           <include name="chooseFaceAmount"></include> 
+           
+           <include name="durationInfo"></include> 
+           <include name="chooseDuration"></include>
+           
+            
+           <include name="genderInfo"></include>
+           <include name="chooseGender"></include>
+            
+           <include name="ageInfo"></include>
+           <include name="chooseAge"></include>
+            
+           <include name="smokeInfo"></include>
+           <include name="chooseSmoke"></include>
+            
+           <include name="healthInfo"></include>
+           <include name="chooseHealth"></include> 
+             
+           <include name="invalidName"></include> -->
+           <include name="validName"></include> 
+             
+         <!--    <include name="invalidEmail"></include> -->
+           <include name="validEmail"></include> 
+           
+            <include name="getCaptcha"></include>
+           
+           <include name="getquoteButton"></include>
+           
+          <!--  <include name="verifyAmountAndDuration"></include>
+           <include name="checkFitBitDevices"></include>
+           <include name="clickCvrgAmountQst"></include>
+           <include name="clickCvrgDurationQst"></include>
+           <include name="clickPriceQst"></include> -->
+           <include name="selectQuote"></include>
+           <include name="confirmApply"></include> 
+           
+           
+          <!--  <include name="checkNewMonthlyPremium"></include>
+           <include name="checkNewYearlyPremium"></include>
+           <include name="checkNewCoverageAmount"></include>
+           <include name="checkNewDuration"></include>
+           <include name="CBasicinfo"></include>
+           <include name="getQuoteInfo"></include>  -->
+           
+           <include name="checkFitbitDeviceVisible"></include>
+           <include name="buyNow"></include>
+           <include name="bannerText"></include>
+           <include name="checkResend_link_btn"></include>
+           
+           
+       
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

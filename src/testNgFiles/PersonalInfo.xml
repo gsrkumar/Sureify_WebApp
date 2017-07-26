@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebApp">
+  <test name="Personal Info" >
+    <parameter name="browsername" value="firefox"></parameter>
+    <parameter name="environment" value="staging"></parameter>
+    <classes>
+      <class name="com.sureifylife.WebApp">
+        <methods>
+           <include name="setUp"></include>
+     <!-- GetQuote Process -->
+    
+           <include name="lanchApp"></include>         
+           <include name="getQuotebutton2"></include> 
+     <!-- BasicInfo  --> 
+           <include name="BasicInfo"></include>     
+           <include name="validzipcode"></include>  
+           <include name="validName"></include>
+           <include name="validEmail"></include> 
+           <include name="getCaptcha"></include>
+           <include name="getquoteButton"></include>
+     <!-- GetQuote -->     
+           <include name="confirmApply"></include>
+     <!-- Confirm And Apply -->      
+           <include name="buyNow"></include>
+     <!-- Click link in Mail -->      
+          <include name="lanchGmail"></include> 
+          <include name="mailLogin"></include> 
+          <include name="clickLink"></include>
+     <!-- Create Account -->     
+          <include name="createAccountInstance"></include>
+          <include name="validPassword"></include>
+          <include name="validConfirmPassword"></include>
+          <include name="verifyShowAndHidePassword"></include>
+          <include name="captcha"></include>
+          <include name="clickCreat"></include>  
+     <!-- Personal Info -->     
+          <include name="personalInfo"></include>
+          <include name="invalidFirstName"></include>
+          <include name="validFirstName"></include>
+          <include name="invalidMiddleName"></include>
+          <include name="validMiddleName"></include>
+          <include name="invalidLastName"></include>
+          <include name="validLastName"></include>
+          <include name="chooseBirth"></include> 
+          <include name="choosGender"></include>
+          <include name="selectHeight"></include>
+          <include name="InvalidWeight"></include>
+          <include name="validWeight"></include>
+          <include name="invalidSSN"></include>
+          <include name="validSSN"></include>
+          <include name="notInUs"></include>
+          <include name="selectState"></include>
+          <include name="inavalidAddress1"></include>
+          <include name="validAddress1"></include>
+          <include name="enterAddress2"></include>
+          <include name="inValidCity"></include>
+          <include name="validCity"></include>
+          <include name="selectUserState"></include>
+          <include name="invalidZipCode"></include>
+          <include name="validZipCode"></include>
+          <include name="invalidCellNumber"></include>
+          <include name="validCellNumber"></include>
+	  	  <include name="invalidWorkNumber"></include>
+		  <include name="validWorkNumber"></include>
+		  <include name="invalidHomeNumber"></include>
+		  <include name="validHomeNumber"></include>
+		  <include name="invalidLicenseNumber"></include>          
+		  <include name="validLicenseNumber"></include>
+		  <include name="driverState"></include>
+		  <include name="invalidOccupation"></include>
+		  <include name="validOccupation"></include>
+		  <include name="invalidWorkZip"></include>
+		  <include name="validWorkZip"></include>          
+		  <include name="clickNextInPersonalINfo"></include>
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

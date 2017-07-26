@@ -1,0 +1,489 @@
+<html>
+<head>
+<title>TestNG:  LanchApp</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LanchApp</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 26 12:36:24 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>217 seconds (217149 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sureifylife.WebApp.blog()'><b>blog</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-517355658" onClick='toggleBox("Output-517355658", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-517355658" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-517355658">
+	Title: Click on Blog link<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/<br/>
+	Status: Clicked on Blog link<br/>
+	Test - PASSED<br/>
+	Title: Redirect to  Blog Page <br/>
+	Input: N/A<br/>
+	Url_After_Test: https://blog.sureify.com/<br/>
+	Status: Redirected to  Blog Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.blogo()'><b>blogo</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1583353301" onClick='toggleBox("Output-1583353301", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1583353301" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1583353301">
+	Title: Navigate back to Home Page<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://blog.sureify.com/<br/>
+	Url_After_Test: https://sureifylife.com/<br/>
+	Status: Navigated back to Home Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.clogo()'><b>clogo</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1432569632" onClick='toggleBox("Output-1432569632", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1432569632" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1432569632">
+	Title: Navigate back to Home Page<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4?plan=2<br/>
+	Url_After_Test: https://sureifylife.com/<br/>
+	Status: Navigated back to Home Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.devices()'><b>devices</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-762384154" onClick='toggleBox("Output-762384154", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-762384154" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-762384154">
+	Title: Click on Devices link<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/<br/>
+	Status: Clicked on Devices link<br/>
+	Test - PASSED<br/>
+	Title: Redirect to  Devices Page <br/>
+	Input: N/A<br/>
+	Url_After_Test: https://sureifylife.com/devices<br/>
+	Status: Redirected to  Devices Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.dlogo()'><b>dlogo</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-760357227" onClick='toggleBox("Output-760357227", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-760357227" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-760357227">
+	Title: Navigate back to Home Page<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4?plan=3<br/>
+	Url_After_Test: https://sureifylife.com/<br/>
+	Status: Navigated back to Home Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getAquote_Devices()'><b>getAquote_Devices</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1403700359" onClick='toggleBox("Output-1403700359", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1403700359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1403700359">
+	Title: Click on Get a Quote Button In Savings page<br/>
+	Input: N/A<br/>
+	Status: Clicked on Get a Quote Button In Devices page & Redirected to *Ready to pick a policy scene?*<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getAquote_Savings()'><b>getAquote_Savings</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-505021446" onClick='toggleBox("Output-505021446", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-505021446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-505021446">
+	Title: Click on Get a Quote Button In Savings page<br/>
+	Input: N/A<br/>
+	Status: Clicked on Get a Quote Button In Savings page & Redirected to *Ready to pick a policy scene?*<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getQuotebutton2()'><b>getQuotebutton2</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1894369629" onClick='toggleBox("Output-1894369629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1894369629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1894369629">
+TEST NO : 21<br/>
+	Title: Click on Get Quote Button <br/>
+	Input: N/A<br/>
+	Status: Clicked on Get Quote Button<br/>
+	Test - PASSED<br/>
+	Title: Redirect to Basic Info Page <br/>
+	Input: N/A<br/>
+	Status: Redirected to  Basic Info Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getRate()'><b>getRate</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1138410383" onClick='toggleBox("Output-1138410383", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1138410383" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1138410383">
+	Title: Click on Get Your Rate Button<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/life_insurance<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Status: Clicked on Get Your Rate Button <br/>
+	Test - PASSED<br/>
+	Title: Navigate back to Life Insurance Page<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Url_After_Test: https://sureifylife.com/life_insurance<br/>
+	Status: Navigated back to Life Insurance Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getStarted()'><b>getStarted</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1473205473" onClick='toggleBox("Output-1473205473", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1473205473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1473205473">
+	Title: Click on Get Started Button<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/life_insurance<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Status: Clicked on Get Started Button <br/>
+	Test - PASSED<br/>
+	Title: Navigate back to Life Insurance Page<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Url_After_Test: https://sureifylife.com/life_insurance<br/>
+	Status: Navigated back to Life Insurance Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.getaQuote()'><b>getaQuote</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-424398527" onClick='toggleBox("Output-424398527", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-424398527" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-424398527">
+	Title: Click on Get a Quote Button<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/life_insurance<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Status: Clicked on Get a Quote Button <br/>
+	Test - PASSED<br/>
+	Title: Navigate back to Home Page<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Url_After_Test: https://sureifylife.com/<br/>
+	Status: Navigated back to Home Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.lanchApp()'><b>lanchApp</b><br>Test class: com.sureifylife.WebApp</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.learnMore()'><b>learnMore</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1456339771" onClick='toggleBox("Output-1456339771", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1456339771" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1456339771">
+	Title: Click on Learn More Button in Life Insurance Page <br/>
+	Input: N/A<br/>
+	Status: Clicked on Life Insurance link & Redirected to Try Sureify Scene.<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.learnMore_Devices()'><b>learnMore_Devices</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-194707680" onClick='toggleBox("Output-194707680", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194707680" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194707680">
+	Title: Click on Learn More Button in Devices Page <br/>
+	Input: N/A<br/>
+	Status: Clicked on Learn More link & Redirected to FITbit Scene.<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.learnMore_Savings()'><b>learnMore_Savings</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-556281560" onClick='toggleBox("Output-556281560", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-556281560" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-556281560">
+	Title: Click on Learn More Button in Savings Page <br/>
+	Input: N/A<br/>
+	Status: Clicked on Learn More link & Redirected to Policy issues Scene.<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.lifeInsurance()'><b>lifeInsurance</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1671507048" onClick='toggleBox("Output-1671507048", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1671507048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1671507048">
+	Title: Click on Life Insurance link<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/<br/>
+	Status: Clicked on Life Insurance link<br/>
+	TEST - PASSED<br/>
+	Title: Redirect to  Life Insurance Page <br/>
+	Input: N/A<br/>
+	Url_After_Test: https://sureifylife.com/life_insurance<br/>
+	Status: Redirected to  Life Insurance Page<br/>
+	TEST- PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.planComparision_Savings()'><b>planComparision_Savings</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-137225802" onClick='toggleBox("Output-137225802", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-137225802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-137225802">
+	Title: Click on 500k policy In Savings page<br/>
+	Input: N/A<br/>
+	$500,000<br/>
+	Status: The Selected plan is appearing in Basic Info page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.pro_Savings()'><b>pro_Savings</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-1744189907" onClick='toggleBox("Output-1744189907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1744189907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1744189907">
+	Title: Click on 500k policy In Savings page<br/>
+	Input: N/A<br/>
+	Status: Clicked on 500k policy In Savings page & Redirected to *Basic Info Page*<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.pro_devices()'><b>pro_devices</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-2017085051" onClick='toggleBox("Output-2017085051", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2017085051" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2017085051">
+	Title: Click on 700k policy In Savings page<br/>
+	Input: N/A<br/>
+	Status: Clicked on 700k policy In Savings page & Redirected to *Basic Info Page*<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.savings()'><b>savings</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-838473569" onClick='toggleBox("Output-838473569", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-838473569" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-838473569">
+	Title: Click on Savings link<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/<br/>
+	Status: Clicked on Savings link<br/>
+	Test - PASSED<br/>
+	Title: Redirect to  Savings Page <br/>
+	Input: N/A<br/>
+	Url_After_Test: https://sureifylife.com/saving<br/>
+	Status: Redirected to  Life Insurance Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.setUp()'><b>setUp</b><br>Test class: com.sureifylife.WebApp<br>Parameters: chrome, staging<br/>
+<a href="#Output-13803304" onClick='toggleBox("Output-13803304", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13803304" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13803304">
+CHROME Browser Lanched<br/>
+Status: http://sureifylife.com/ Launched<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.startSaving()'><b>startSaving</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-27362884" onClick='toggleBox("Output-27362884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27362884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27362884">
+	Title: Click on Start Savings Button<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/life_insurance<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Status: Clicked on Start Savings Button <br/>
+	Test - PASSED<br/>
+	Title: Navigate back to Life Insurance Page<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Url_After_Test: https://sureifylife.com/life_insurance<br/>
+	Status: Navigated back to Life Insurance Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+<tr>
+<td title='com.sureifylife.WebApp.trySureify()'><b>trySureify</b><br>Test class: com.sureifylife.WebApp<br/>
+<a href="#Output-900636745" onClick='toggleBox("Output-900636745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-900636745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-900636745">
+	Title: Click on Try Sureify Button Should Redirect Basic Info Page <br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/life_insurance<br/>
+	Input: N/A<br/>
+	Url_After_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Status: Redirected to Basic Info Page <br/>
+	Test - PASSED<br/>
+	Title: Navigate back to Life Insurance Page<br/>
+	Input: N/A<br/>
+	Url_Before_Test: https://sureifylife.com/quote/getQuotev4<br/>
+	Url_After_Test: https://sureifylife.com/life_insurance<br/>
+	Status: Navigated back to Life Insurance Page<br/>
+	Test - PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.sureifylife.WebApp@675d3402</td></tr>
+</table><p>
+</body>
+</html>

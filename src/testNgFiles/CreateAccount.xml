@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebApp">
+  <test name="Create Account" >
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="environment" value="staging"></parameter>
+    <classes>
+      <class name="com.sureifylife.WebApp">
+        <methods>
+           <include name="setUp"></include>
+     <!-- GetQuote Process -->
+    
+           <include name="lanchApp"></include>         
+           <include name="getQuotebutton2"></include> 
+           
+     <!-- BasicInfo  --> 
+     
+           <include name="BasicInfo"></include>     
+           <include name="validzipcode"></include>  
+           <include name="validName"></include>
+           <include name="validEmail"></include> 
+           <include name="getCaptcha"></include>
+           <include name="getquoteButton"></include>
+           
+     <!-- GetQuote -->   
+       
+           <include name="confirmApply"></include>
+           
+     <!-- Confirm And Apply --> 
+          
+           <include name="buyNow"></include>
+           
+     <!-- Click link in Mail -->  
+         
+          <include name="lanchGmail"></include> 
+          <include name="mailLogin"></include> 
+          <include name="clickLink"></include>
+          
+     <!-- Create Account -->    
+      
+          <include name="createAccountInstance"></include>
+          <include name="invalidPasswordData"></include>
+          <include name="validPassword"></include>
+          <include name="validConfirmPassword"></include>
+          <include name="verifyShowAndHidePassword"></include>
+          <include name="captcha"></include>
+          <include name="clickCreat"></include>  
+    
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

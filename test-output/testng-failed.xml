@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WebApp]">
+  <parameter name="environment" value="staging"/>
+  <parameter name="browsername" value="chrome"/>
+  <test name="Regression(failed)">
+    <parameter name="environment" value="staging"/>
+    <parameter name="browsername" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regressiontest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sureifylife.WebApp">
+        <methods>
+          <include name="medicalinfoInvalidAddress1"/>
+          <include name="validDateofDiagnosis"/>
+          <include name="validPrimaryBenfPer"/>
+          <include name="validWeight"/>
+          <include name="addPercentagePrimaryBenf"/>
+          <include name="invalidContingentRelationName"/>
+          <include name="BeneficiaryInfo"/>
+          <include name="choosGender"/>
+          <include name="invalidDateofDiagnosis"/>
+          <include name="invalidMiddleName"/>
+          <include name="payment"/>
+          <include name="validWorkZip"/>
+          <include name="validAddress1"/>
+          <include name="setUp"/>
+          <include name="invalidHomeNumber"/>
+          <include name="medicalinfovalidCity"/>
+          <include name="testFiledsWithInvalidData"/>
+          <include name="validFirstName"/>
+          <include name="lanchApp"/>
+          <include name="buyNow"/>
+          <include name="invalidContingentBenfPer"/>
+          <include name="captcha"/>
+          <include name="confirmation"/>
+          <include name="invalidWorkZip"/>
+          <include name="validLastName"/>
+          <include name="validOccupation"/>
+          <include name="select_Person_somoneElse"/>
+          <include name="medicalinfoState"/>
+          <include name="select_Person_Me_Yes"/>
+          <include name="validHealthcareProvider"/>
+          <include name="validHomeNumber"/>
+          <include name="medicalInfo"/>
+          <include name="validCity"/>
+          <include name="clickNext"/>
+          <include name="clickCreat"/>
+          <include name="confirmAddress"/>
+          <include name="chooseBirth"/>
+          <include name="trust"/>
+          <include name="next"/>
+          <include name="select_Yes_Diagnosed"/>
+          <include name="medicalinfoValidZip"/>
+          <include name="otherInsurance_Yes_Unsure"/>
+          <include name="validCellNumber"/>
+          <include name="selectState"/>
+          <include name="invalidSSN"/>
+          <include name="selectUserState"/>
+          <include name="otherInsurance_No"/>
+          <include name="conditionalReceipt"/>
+          <include name="select_Yes_Yes"/>
+          <include name="validContingentRelationName"/>
+          <include name="removeContingentBenficiary"/>
+          <include name="medicalinfoValidAddress2"/>
+          <include name="next_replacement"/>
+          <include name="clickNextInPersonalINfo"/>
+          <include name="clickEdit"/>
+          <include name="checkFieldReq"/>
+          <include name="InvalidWeight"/>
+          <include name="validContingentBenfPer"/>
+          <include name="getquoteButton"/>
+          <include name="select_No_No"/>
+          <include name="BasicInfo"/>
+          <include name="removeDiagnosis"/>
+          <include name="validPrimaryBenName"/>
+          <include name="invalidHealthcareProvider"/>
+          <include name="clickLink"/>
+          <include name="addContingentBenficiary"/>
+          <include name="selectOtherTab"/>
+          <include name="getQuotebutton2"/>
+          <include name="InvalidPrimaryRelationName"/>
+          <include name="invalidZipCode"/>
+          <include name="medicalinfoInvalidCity"/>
+          <include name="clickGetStarted"/>
+          <include name="clickSameAdd"/>
+          <include name="InvalidPrimaryBenfPer"/>
+          <include name="otherInsurance_Yes_Yes"/>
+          <include name="personalInfo"/>
+          <include name="addPrimaryBenficiary"/>
+          <include name="invalidLicenseNumber"/>
+          <include name="otherInsurances"/>
+          <include name="inavalidAddress1"/>
+          <include name="invalidContingentBenfName"/>
+          <include name="medicalinfoValidAddress1"/>
+          <include name="otherInsurance_Yes_No"/>
+          <include name="checkGreyLayout"/>
+          <include name="clickContinue"/>
+          <include name="invalidCellNumber"/>
+          <include name="removePrimaryBenficiary"/>
+          <include name="validSSN"/>
+          <include name="invalidOccupation"/>
+          <include name="invalidDiagnosis"/>
+          <include name="iAgree"/>
+          <include name="replacement"/>
+          <include name="createAccountInstance"/>
+          <include name="invalidWorkNumber"/>
+          <include name="validDiagnosis"/>
+          <include name="notInUs"/>
+          <include name="clickOk"/>
+          <include name="validContingentBenfName"/>
+          <include name="addAnotherDiagnosis"/>
+          <include name="selectHeight"/>
+          <include name="lanchGmail"/>
+          <include name="driverState"/>
+          <include name="clickUpdate"/>
+          <include name="removePolicy_Replacement"/>
+          <include name="validLicenseNumber"/>
+          <include name="select_No_Diagnosed"/>
+          <include name="validWorkNumber"/>
+          <include name="addAnotherPolicy"/>
+          <include name="consent"/>
+          <include name="addPercentageContingentBenf"/>
+          <include name="confirmApply"/>
+          <include name="clickConfirm"/>
+          <include name="invalidFirstName"/>
+          <include name="validMiddleName"/>
+          <include name="mailLogin"/>
+          <include name="clickSend"/>
+          <include name="invalidLastName"/>
+          <include name="removePolicy"/>
+          <include name="clickToSign"/>
+          <include name="validZipCode"/>
+          <include name="clickToEsign"/>
+          <include name="enterAddress2"/>
+          <include name="clickConditionalNext"/>
+          <include name="validPrimaryRelationName"/>
+          <include name="addAnotherReplacement"/>
+          <include name="invalidPrimaryBenName"/>
+          <include name="ownershipInfo"/>
+          <include name="inValidCity"/>
+          <include name="userLogin"/>
+          <include name="medicalinfoInvalidZip"/>
+          <include name="select_Person_Me_No"/>
+          <include name="clickClose"/>
+        </methods>
+      </class> <!-- com.sureifylife.WebApp -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [WebApp] -->

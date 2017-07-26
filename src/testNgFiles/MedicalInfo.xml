@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebApp">
+  <test name="Ownership Info" >
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="environment" value="staging"></parameter>
+    <classes>
+      <class name="com.sureifylife.WebApp">
+        <methods>
+           <include name="setUp"></include>
+     <!-- GetQuote Process -->
+    
+           <include name="lanchApp"></include>         
+           <include name="getQuotebutton2"></include> 
+     <!-- BasicInfo  --> 
+           <include name="BasicInfo"></include>     
+           <include name="validzipcode"></include>  
+           <include name="validName"></include>
+           <include name="validEmail"></include> 
+           <include name="getCaptcha"></include>
+           <include name="getquoteButton"></include>
+     <!-- GetQuote -->     
+           <include name="confirmApply"></include>
+     <!-- Confirm And Apply -->      
+           <include name="buyNow"></include>
+     <!-- Click link in Mail -->      
+          <include name="lanchGmail"></include> 
+          <include name="mailLogin"></include> 
+          <include name="clickLink"></include>
+     <!-- Create Account -->     
+          <include name="createAccountInstance"></include>
+          <include name="validPassword"></include>
+          <include name="validConfirmPassword"></include>
+          <!-- <include name="verifyShowAndHidePassword"></include> -->
+          <include name="captcha"></include>
+          <include name="clickCreat"></include>  
+     <!-- Personal Info -->     
+          <include name="personalInfo"></include>
+        <!--  
+          <include name="validFirstName"></include>
+         
+          <include name="validMiddleName"></include>
+          
+          <include name="validLastName"></include>
+          <include name="chooseBirth"></include> 
+          <include name="choosGender"></include>
+          <include name="selectHeight"></include>
+          
+          <include name="validWeight"></include>
+          
+          <include name="validSSN"></include>
+         
+          <include name="selectState"></include>
+         
+          <include name="validAddress1"></include>
+          <include name="enterAddress2"></include>
+         
+          <include name="validCity"></include>
+          <include name="selectUserState"></include>
+         
+          <include name="validZipCode"></include>
+         
+          <include name="validCellNumber"></include>
+	  	  
+		  <include name="validWorkNumber"></include>
+		 
+		  <include name="validHomeNumber"></include>
+		       
+		  <include name="validLicenseNumber"></include>
+		  <include name="driverState"></include>
+		 
+		  <include name="validOccupation"></include>
+		  
+		  <include name="validWorkZip"></include>      -->      
+		  <include name="clickNextInPersonalINfo"></include>
+	  <!-- BeneficiaryInfo -->
+	      <include name="BeneficiaryInfo"></include>
+	      
+	    <!--   <include name="invalidPrimaryBenName"></include>
+	      <include name="validPrimaryBenName"></include>
+	      <include name="InvalidPrimaryRelationName"></include>
+	      <include name="validPrimaryRelationName"></include>
+	      <include name="addPrimaryBenficiary"></include>
+	      <include name="addPercentagePrimaryBenf"></include>
+	      <include name="removePrimaryBenficiary"></include>
+	      <include name="InvalidPrimaryBenfPer"></include>
+	      <include name="validPrimaryBenfPer"></include>
+	      
+	      <include name="invalidContingentBenfName"></include>
+	      <include name="validContingentBenfName"></include>
+	      <include name="invalidContingentRelationName"></include>
+	      <include name="validContingentRelationName"></include>
+	      <include name="addContingentBenficiary"></include>
+	      <include name="addPercentageContingentBenf"></include>
+	      <include name="removeContingentBenficiary"></include>
+	      <include name="invalidContingentBenfPer"></include>
+	      <include name="validContingentBenfPer"></include>
+	       -->
+	      <include name="next"></include>
+	      
+	   <!-- Ownership Info -->  
+	       <include name="ownershipInfo"></include>
+	     <!--   <include name="testFiledsWithInvalidData"></include> -->
+	      <!--  <include name="select_Person_Me_Yes"></include>
+	       <include name="select_Person_somoneElse"></include>
+	       <include name="trust"></include> -->
+	       <include name="select_Person_Me_No"></include>
+	       
+	   <!-- Other Insurance Info --> 
+	      <include name="otherInsurances"></include> 
+	     <!--  <include name="otherInsurance_Yes_Yes"></include>
+	      <include name="otherInsurance_Yes_No"></include>
+	      <include name="otherInsurance_Yes_Unsure"></include>
+	      <include name="addAnotherPolicy"></include>
+	      <include name="removePolicy"></include> -->
+	      <include name="otherInsurance_No"></include>
+	      
+	   <!-- Replacement -->
+	      <include name="replacement"></include>
+	      <!-- <include name="select_Yes_Yes"></include>
+	      <include name="addAnotherReplacement"></include>
+	      <include name="removePolicy_Replacement"></include> -->
+	      <include name="select_No_No"></include>
+	      <include name="next_replacement"></include>
+	      
+	    <!-- Medical Info --> 
+	    
+	       <include name="medicalInfo"></include>
+	       <include name="select_Yes_Diagnosed"></include>
+	       <include name="invalidDiagnosis"></include>
+	       <include name="validDiagnosis"></include>
+	       <include name="invalidDateofDiagnosis"></include>
+	       <include name="validDateofDiagnosis"></include>
+	       <include name="invalidHealthcareProvider"></include>
+	       <include name="validHealthcareProvider"></include>
+	       <include name="medicalinfoInvalidAddress1"></include>
+	       <include name="medicalinfoValidAddress1"></include>
+	       <include name="medicalinfoValidAddress2"></include>
+	       <include name="medicalinfoInvalidCity"></include>
+	       <include name="medicalinfovalidCity"></include>
+	       <include name="medicalinfoState"></include>
+	       <include name="medicalinfoInvalidZip"></include>
+	       <include name="medicalinfoValidZip"></include>
+	       <include name="addAnotherDiagnosis"></include>
+	       <include name="removeDiagnosis"></include>
+	       <include name="select_No_Diagnosed"></include>
+	       <include name="clickNext"></include>
+	       
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

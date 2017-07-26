@@ -1,0 +1,111 @@
+***********************************************************
+*	Selenium Automation Testing Log
+*	Application : Existing User Flow
+*	Execution Start Time: Jul-15-2016 4:31:45 PM
+*	Build Number: Not Available
+***********************************************************
+
+Test 1
+	Title: Launch Sureify Login page
+	Input:https://sureify.com/alpha/login/
+	Status: https://sureify.com/alpha/login/ Launched
+	Test2- PASSED
+
+Test3
+	Title: Check Email Field available or not?
+	Status: Email Field is avilable 
+	Test3- PASSED
+
+Test4
+	Title: Check Password Field available or not?
+	Status: Password Field is avilable 
+	Test4- PASSED
+
+Test5
+	Title: Check Login Button available or not?
+	Status: Login Button is avilable 
+	Test5- PASSED
+
+Test6
+	Title: Click Login Button With out entering Email and Password
+	Input: email: 
+	Input: password:
+	Status:  Should show Error messages like * Email is required* Password is required
+	Test6- PASSED
+
+Test7
+	Title: Click Login Button With out entering Email 
+	Input: email: 
+	Input: password: vendus123
+	Status:  Should show Error message like Email Required
+	Test7- PASSED
+
+Test 8
+	Title: Click Login Button With out entering Password 
+	Input: email: vijay@vendus.com 
+	Input: password:
+	Status:  Should show Error message like Password Required
+	Test8- PASSED
+
+Test 9
+	Title: Login with Invalid Email & InvalidPassword
+	Input: email: test@vendus.com 
+	Input: password: test123
+	Status:  Should show Error messages like: Incorrect email/password combination.
+	Test9- PASSED
+
+Test 10
+	Title: Login with valid Email & Password
+	Input: email: swati8591@gmail.com 
+	Input: password: swathi123
+	Status:  Should Login sucessfully & Redirected to Dashboard page
+	Test10- PASSED
+
+Test 11
+	Title: Click on Connect Devices button
+	Status:  Clicked on Connect Devices button
+	Test11- PASSED
+
+Test 12
+	Title: Click on Connect button for Fitbit in the Devices list 
+	Status: Clicked on Connect button for Fitbit in the Devices list 
+	Test12- PASSED
+
+Test 13
+	Title: Enter Email 
+	Status: Email Entered 
+	Test13- PASSED
+
+Test 14
+	Title: Enter Password 
+	Status: Password Entered 
+	Test14- PASSED
+
+Test 15
+	Title: Click on Login 
+	Status: Clicked on Login 
+	Test15- PASSED
+
+Test 16
+	Title: Click on Allow 
+	Status: Clicked on Login 
+	Test16- PASSED
+
+Test 17
+	Title: Click on Sync 
+	Status: Clicked on Sync 
+	Test17- PASSED
+
+Test 18
+	Title: Click on Settings Icon In Left side menu 
+	Status: Clicked on Settings Icon In Left side menu 
+	Test18- PASSED
+
+Test 19
+	Title: Click on Disconnect 
+	Status: Clicked on Disconnect 
+	Test19- PASSED
+
+Test 20
+	Title: Click on Etitprofile Button 
+	Url_Before_Test: https://sureify.com/alpha/users/connectDevices

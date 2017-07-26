@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebApp">
+  <test name="test1" >
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="environment" value="staging"></parameter>
+    <classes>
+      <class name="com.sureifylife.WebApp">
+        <methods>
+           <include name="setUp"></include>
+           
+           <include name="lanchApp"></include>         
+           <include name="getQuotebutton2"></include>  
+           
+       
+        </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  <test name = "test2">
+     <classes>
+       <class name="com.sureifylife.WebApp">
+          <methods>
+          <include name="BasicInfo"></include>     
+           <include name="validzipcode"></include>  
+          
+          
+           <include name="validName"></include> 
+             
+         <!--    <include name="invalidEmail"></include> -->
+           <include name="validEmail"></include> 
+           
+           <include name="getCaptcha"></include>
+           
+           <include name="getquoteButton"></include>
+     
+           <include name="selectQuote"></include>
+           
+          <!--  <include name="confirmApply"></include>
+           
+           <include name="checkFitbitDeviceVisible"></include>
+           <include name="buyNow"></include>
+           <include name="bannerText"></include>
+           <include name="checkResend_link_btn"></include> -->
+           
+           </methods>
+       
+       </class>
+     </classes>
+  </test>
+</suite> <!-- WebApp -->

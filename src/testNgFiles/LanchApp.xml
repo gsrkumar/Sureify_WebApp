@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebApp">
+  <test name="LanchApp">
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="environment" value="staging"></parameter>
+    <classes>
+      <class name="com.sureifylife.WebApp">
+        <methods>
+        <include name="setUp"></include>
+          <include name="lanchApp"></include>        <!-- test 0 -->
+          <include name="lifeInsurance"></include> <!-- test 1 -->
+          <include name="learnMore"></include>     <!-- test 2 -->
+          <include name="trySureify"></include>    <!-- test 3 -->
+          <include name="startSaving"></include>   <!-- test 4 -->
+          <include name="getRate"></include>       <!-- test 5 -->
+          <include name="getStarted"></include>    <!-- test 6 -->
+          <include name="getaQuote"></include>     <!-- test 7 -->
+          <include name="savings"></include>       <!-- test 8 -->
+          <include name="learnMore_Savings"></include>   <!-- test 9 -->
+          <include name="getAquote_Savings"></include>   <!-- test 10 -->
+          <include name="pro_Savings"></include>         <!-- test 11 -->
+          <include name="planComparision_Savings"></include>  <!-- test 12 -->
+          <include name="clogo"></include>            <!-- test 13 -->
+          <include name="devices"></include>          <!-- test 14 -->
+          <include name="learnMore_Devices"></include>  <!-- test 15 -->
+          <include name="getAquote_Devices"></include>  <!-- test 16 -->
+          <include name="pro_devices"></include>        <!-- test 17 -->
+          <include name="dlogo"></include>      <!-- test 18 -->
+          <include name="blog"></include>       <!-- test 19 -->
+          <include name="blogo"></include>      <!-- test 20 -->
+          <include name="getQuotebutton2"></include>  <!-- test 21 -->
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->
